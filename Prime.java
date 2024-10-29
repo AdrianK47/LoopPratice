@@ -19,8 +19,20 @@ public class Prime{
             return false;
         }
     }
+    public static int countPrimes(int n){
+        int i = 2;
+        int value =0;
+        while(n>i){
+            if(isPrime(i)){
+                value++;
+            }
+            i++;
+        }
+        return value;
+    }
     public static void main(String[]args){
         System.out.println(isPrime(2));
         System.out.println(countFactors(2));
+        System.out.println(countPrimes(100));
     }
 }
